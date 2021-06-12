@@ -32,7 +32,7 @@ bool get isAuth {
 
 
   Future<void> signup(String email,String password) async{
-    final url=Uri.parse('Your Database URl');
+    final url=Uri.parse('Your Database signup URl');
     try{
       final response = await http.post(url,body: json.encode({
         'email':email,
@@ -61,7 +61,7 @@ bool get isAuth {
   }
   Future<void> login(String email,String password) async {
     final url = Uri.parse(
-        'Your Database URl');
+        'Your Database signin URl');
     try {
       final response = await http.post(url, body: json.encode({
         'email': email,
